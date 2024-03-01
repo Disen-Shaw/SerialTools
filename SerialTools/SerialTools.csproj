@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\SerialGeneric.cs" />
+    <Compile Include="Class\SerialModbusMaster.cs" />
+    <Compile Include="Class\SerialModbusSlave.cs" />
+    <Compile Include="Class\SerialServer.cs" />
+    <Compile Include="Enum\SerialServerType.cs" />
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +83,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Struct\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

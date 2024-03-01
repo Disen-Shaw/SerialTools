@@ -46,8 +46,8 @@
             this.lbl_SelectDataBits = new System.Windows.Forms.ToolStripLabel();
             this.cmbx_SelectDatabits = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.lbl_SelectParty = new System.Windows.Forms.ToolStripLabel();
-            this.cmbx_SelectParty = new System.Windows.Forms.ToolStripComboBox();
+            this.lbl_SelectParity = new System.Windows.Forms.ToolStripLabel();
+            this.cmbx_SelectParity = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_Clean = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
@@ -75,8 +75,8 @@
             this.lbl_SelectDataBits,
             this.cmbx_SelectDatabits,
             this.toolStripSeparator6,
-            this.lbl_SelectParty,
-            this.cmbx_SelectParty,
+            this.lbl_SelectParity,
+            this.cmbx_SelectParity,
             this.toolStripSeparator7,
             this.btn_Clean,
             this.toolStripSeparator8,
@@ -96,6 +96,7 @@
             this.btn_Start.Name = "btn_Start";
             this.btn_Start.Size = new System.Drawing.Size(60, 22);
             this.btn_Start.Text = "开始连接";
+            this.btn_Start.Click += new System.EventHandler(this.btn_Start_Click);
             // 
             // toolStripSeparator1
             // 
@@ -110,6 +111,7 @@
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(60, 22);
             this.btn_Exit.Text = "退出软件";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // toolStripSeparator2
             // 
@@ -180,16 +182,16 @@
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
             // 
-            // lbl_SelectParty
+            // lbl_SelectParity
             // 
-            this.lbl_SelectParty.Name = "lbl_SelectParty";
-            this.lbl_SelectParty.Size = new System.Drawing.Size(44, 22);
-            this.lbl_SelectParty.Text = "校验位";
+            this.lbl_SelectParity.Name = "lbl_SelectParity";
+            this.lbl_SelectParity.Size = new System.Drawing.Size(44, 22);
+            this.lbl_SelectParity.Text = "校验位";
             // 
-            // cmbx_SelectParty
+            // cmbx_SelectParity
             // 
-            this.cmbx_SelectParty.Name = "cmbx_SelectParty";
-            this.cmbx_SelectParty.Size = new System.Drawing.Size(100, 25);
+            this.cmbx_SelectParity.Name = "cmbx_SelectParity";
+            this.cmbx_SelectParity.Size = new System.Drawing.Size(100, 25);
             // 
             // toolStripSeparator7
             // 
@@ -204,6 +206,7 @@
             this.btn_Clean.Name = "btn_Clean";
             this.btn_Clean.Size = new System.Drawing.Size(60, 22);
             this.btn_Clean.Text = "清除窗口";
+            this.btn_Clean.Click += new System.EventHandler(this.btn_Clean_Click);
             // 
             // toolStripSeparator8
             // 
@@ -218,6 +221,7 @@
             this.btn_OpenFolder.Name = "btn_OpenFolder";
             this.btn_OpenFolder.Size = new System.Drawing.Size(72, 22);
             this.btn_OpenFolder.Text = "打开文件夹";
+            this.btn_OpenFolder.Click += new System.EventHandler(this.btn_OpenFolder_Click);
             // 
             // toolStripSeparator9
             // 
@@ -259,8 +263,8 @@
         private System.Windows.Forms.ToolStripLabel lbl_SelectDataBits;
         private System.Windows.Forms.ToolStripComboBox cmbx_SelectDatabits;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripLabel lbl_SelectParty;
-        private System.Windows.Forms.ToolStripComboBox cmbx_SelectParty;
+        private System.Windows.Forms.ToolStripLabel lbl_SelectParity;
+        private System.Windows.Forms.ToolStripComboBox cmbx_SelectParity;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripButton btn_Clean;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
