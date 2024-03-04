@@ -43,6 +43,7 @@ namespace SerialTools.Class
             }
         }
 
+        #region 基类公共方法
         /// <summary>
         /// 初始化 SeralPort 
         /// </summary>
@@ -57,5 +58,7 @@ namespace SerialTools.Class
         /// 关闭 SerialPort
         /// </summary>
         public abstract void Close();
+
+        #endregion
     }
 }
