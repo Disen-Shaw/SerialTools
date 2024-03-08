@@ -9,7 +9,7 @@ namespace SerialTools.Enum
     /// <summary>
     /// 串口调试 Server 类型
     /// </summary>
-    public enum SerialServerType
+    internal enum SerialServerType
     {
         SerialServer_Generic = 0,       //!< 通用串口调试助手
         SerialServerModbusMaster = 1,   //!< Modbus RTU Master

@@ -5,39 +5,63 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace SerialTools.Class
 {
     public class SerialGeneric : SerialServer
     {
-        /// <summary>
-        /// 构造函数
-        /// </summary>
+        #region 公用成员
+        public SerialServerError SerialServerErrorCallback;
+        public SerialServerMessage SerialServerMessageCallback;
+        public SerialServerConnect SerialServerConnectCallback;
+        public SerialServerMessageArrived SerialServerMessageArrivedCallback;
+        #endregion
+
+        #region 私有成员
+        #endregion
+
         public SerialGeneric()
         {
+            _sp = new SerialPort();
         }
 
-        /// <summary>
-        /// 初始化 SeralPort 
-        /// </summary>
-        /// <param name="_port">端口名</param>
-        /// <param name="_baudrate">波特率</param>
-        /// <param name="_stopbits">停止位</param>
-        /// <param name="_databits">数据位</param>
-        /// <param name="_parity">校验位</param>
+        #region 覆盖基类方法
         public override void Init(string _port, int _baudrate, StopBits _stopbits, int _databits, Parity _parity)
         {
-            SerialPortServer.PortName = _port;
-            SerialPortServer.BaudRate = _baudrate;
-            SerialPortServer.DataBits = _databits;
-            SerialPortServer.Parity = _parity;
-            SerialPortServer.StopBits = _stopbits;
+            _sp.PortName = _port;
+            _sp.BaudRate = _baudrate;
+            _sp.StopBits = _stopbits;
+            _sp.DataBits = _databits;
+            _sp.Parity = _parity;
         }
 
-        /// <summary>
-        /// 关闭 SerialPort
-        /// </summary>
-        public override void Close()
+        public override bool Start()
         {
+            try
+            {
+                _sp.Open();
+            }
+            catch (Exception ex)
+            {
+                SerialServerErrorCallback.Invoke("串口开启异常，请检查串口设备连接和使用情况\r\n" + ex.ToString());
+            }
+            if (_sp.IsOpen)
+            {
+                SerialServerConnectCallback.Invoke(true);
+                return true;
+            }
+            else
+            {
+                SerialServerConnectCallback.Invoke(false);
+                return false;
+            }
         }
+
+        public override bool Close()
+        {
+            return true;
+        }
+
+        #endregion
     }
 }

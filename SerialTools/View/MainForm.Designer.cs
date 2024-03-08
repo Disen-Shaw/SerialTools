@@ -90,7 +90,7 @@
             this.toolStripSeparator9});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1264, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1685, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -133,7 +133,7 @@
             // cmbx_PortSelect
             // 
             this.cmbx_PortSelect.Name = "cmbx_PortSelect";
-            this.cmbx_PortSelect.Size = new System.Drawing.Size(200, 25);
+            this.cmbx_PortSelect.Size = new System.Drawing.Size(265, 25);
             // 
             // toolStripSeparator3
             // 
@@ -149,7 +149,7 @@
             // cmbx_SelectBaudrate
             // 
             this.cmbx_SelectBaudrate.Name = "cmbx_SelectBaudrate";
-            this.cmbx_SelectBaudrate.Size = new System.Drawing.Size(100, 25);
+            this.cmbx_SelectBaudrate.Size = new System.Drawing.Size(132, 25);
             // 
             // toolStripSeparator4
             // 
@@ -165,7 +165,7 @@
             // cmbx_SelectStopBt
             // 
             this.cmbx_SelectStopBt.Name = "cmbx_SelectStopBt";
-            this.cmbx_SelectStopBt.Size = new System.Drawing.Size(100, 25);
+            this.cmbx_SelectStopBt.Size = new System.Drawing.Size(132, 25);
             // 
             // toolStripSeparator5
             // 
@@ -181,7 +181,7 @@
             // cmbx_SelectDatabits
             // 
             this.cmbx_SelectDatabits.Name = "cmbx_SelectDatabits";
-            this.cmbx_SelectDatabits.Size = new System.Drawing.Size(100, 25);
+            this.cmbx_SelectDatabits.Size = new System.Drawing.Size(132, 25);
             // 
             // toolStripSeparator6
             // 
@@ -197,7 +197,7 @@
             // cmbx_SelectParity
             // 
             this.cmbx_SelectParity.Name = "cmbx_SelectParity";
-            this.cmbx_SelectParity.Size = new System.Drawing.Size(100, 25);
+            this.cmbx_SelectParity.Size = new System.Drawing.Size(132, 25);
             // 
             // toolStripSeparator7
             // 
@@ -237,11 +237,12 @@
             // txtbx_Log
             // 
             this.txtbx_Log.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtbx_Log.Location = new System.Drawing.Point(0, 531);
+            this.txtbx_Log.Location = new System.Drawing.Point(0, 665);
+            this.txtbx_Log.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbx_Log.Multiline = true;
             this.txtbx_Log.Name = "txtbx_Log";
             this.txtbx_Log.ReadOnly = true;
-            this.txtbx_Log.Size = new System.Drawing.Size(1264, 150);
+            this.txtbx_Log.Size = new System.Drawing.Size(1685, 186);
             this.txtbx_Log.TabIndex = 1;
             // 
             // tabctrl_Form
@@ -251,51 +252,57 @@
             this.tabctrl_Form.Controls.Add(this.tabPage_ModbusSlave);
             this.tabctrl_Form.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabctrl_Form.Location = new System.Drawing.Point(0, 25);
+            this.tabctrl_Form.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabctrl_Form.Name = "tabctrl_Form";
             this.tabctrl_Form.SelectedIndex = 0;
-            this.tabctrl_Form.Size = new System.Drawing.Size(1264, 506);
+            this.tabctrl_Form.Size = new System.Drawing.Size(1685, 640);
             this.tabctrl_Form.TabIndex = 2;
             // 
             // tabPage_Generic
             // 
-            this.tabPage_Generic.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Generic.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_Generic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage_Generic.Name = "tabPage_Generic";
-            this.tabPage_Generic.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Generic.Size = new System.Drawing.Size(1256, 480);
+            this.tabPage_Generic.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Generic.Size = new System.Drawing.Size(1677, 611);
             this.tabPage_Generic.TabIndex = 0;
             this.tabPage_Generic.Text = "串口助手";
             this.tabPage_Generic.UseVisualStyleBackColor = true;
             // 
             // tabPage_ModbusMaster
             // 
-            this.tabPage_ModbusMaster.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_ModbusMaster.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_ModbusMaster.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage_ModbusMaster.Name = "tabPage_ModbusMaster";
-            this.tabPage_ModbusMaster.Size = new System.Drawing.Size(1256, 480);
+            this.tabPage_ModbusMaster.Size = new System.Drawing.Size(1677, 603);
             this.tabPage_ModbusMaster.TabIndex = 2;
             this.tabPage_ModbusMaster.Text = "Modbus主站";
             this.tabPage_ModbusMaster.UseVisualStyleBackColor = true;
             // 
             // tabPage_ModbusSlave
             // 
-            this.tabPage_ModbusSlave.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_ModbusSlave.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_ModbusSlave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage_ModbusSlave.Name = "tabPage_ModbusSlave";
-            this.tabPage_ModbusSlave.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_ModbusSlave.Size = new System.Drawing.Size(1256, 480);
+            this.tabPage_ModbusSlave.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_ModbusSlave.Size = new System.Drawing.Size(1677, 603);
             this.tabPage_ModbusSlave.TabIndex = 1;
             this.tabPage_ModbusSlave.Text = "Modbus从站";
             this.tabPage_ModbusSlave.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1685, 851);
             this.Controls.Add(this.tabctrl_Form);
             this.Controls.Add(this.txtbx_Log);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "串口调试抓手";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tabctrl_Form.ResumeLayout(false);
