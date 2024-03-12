@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SerialTools.Class
 {
-    public class SerialModbusMaster : SerialServer
+    public class SerialModbusMaster : SerialManager
     {
         /// <summary>
         /// 构造函数
@@ -22,6 +22,22 @@ namespace SerialTools.Class
         public override bool Start()
         {
             return true;
+        }
+        public override bool Transmit(byte[] date, int len)
+        {
+            return true;
+        }
+
+        public override bool Transmit(string message)
+        {
+            return true;
+        }
+
+        public override void StartGenericTimer(int ms, string message)
+        {
+        }
+        public override void StopGenericTimer()
+        {
         }
 
         public override bool Close()

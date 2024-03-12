@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICO.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,11 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\SerialGeneric.cs" />
+    <Compile Include="Class\SerialNormal.cs" />
     <Compile Include="Class\SerialModbusMaster.cs" />
     <Compile Include="Class\SerialModbusSlave.cs" />
-    <Compile Include="Class\SerialServer.cs" />
-    <Compile Include="Enum\SerialServerType.cs" />
+    <Compile Include="Class\SerialManager.cs" />
+    <Compile Include="Enum\SerialManagerType.cs" />
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +90,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Struct\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICO.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
