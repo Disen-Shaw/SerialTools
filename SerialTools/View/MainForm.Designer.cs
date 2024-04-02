@@ -53,6 +53,7 @@
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_OpenFolder = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_topDisplay = new System.Windows.Forms.ToolStripButton();
             this.txtbx_Log = new System.Windows.Forms.TextBox();
             this.tabctrl_Form = new System.Windows.Forms.TabControl();
             this.tabPage_Generic = new System.Windows.Forms.TabPage();
@@ -73,7 +74,6 @@
             this.btn_GenericTxSend = new System.Windows.Forms.Button();
             this.tabPage_ModbusMaster = new System.Windows.Forms.TabPage();
             this.tabPage_ModbusSlave = new System.Windows.Forms.TabPage();
-            this.btn_topDisplay = new System.Windows.Forms.ToolStripButton();
             this.toolStrip_Form.SuspendLayout();
             this.tabctrl_Form.SuspendLayout();
             this.tabPage_Generic.SuspendLayout();
@@ -89,6 +89,8 @@
             this.toolStripSeparator1,
             this.btn_Exit,
             this.toolStripSeparator2,
+            this.btn_Clean,
+            this.toolStripSeparator8,
             this.lbl_SelectPort,
             this.cmbx_SelectPort,
             this.toolStripSeparator3,
@@ -104,8 +106,6 @@
             this.lbl_SelectParity,
             this.cmbx_SelectParity,
             this.toolStripSeparator7,
-            this.btn_Clean,
-            this.toolStripSeparator8,
             this.btn_OpenFolder,
             this.toolStripSeparator9,
             this.btn_topDisplay});
@@ -256,6 +256,16 @@
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
             this.toolStripSeparator9.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_topDisplay
+            // 
+            this.btn_topDisplay.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btn_topDisplay.Image = ((System.Drawing.Image)(resources.GetObject("btn_topDisplay.Image")));
+            this.btn_topDisplay.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_topDisplay.Name = "btn_topDisplay";
+            this.btn_topDisplay.Size = new System.Drawing.Size(23, 22);
+            this.btn_topDisplay.Text = "~";
+            this.btn_topDisplay.Click += new System.EventHandler(this.btn_topDisplay_Click);
             // 
             // txtbx_Log
             // 
@@ -480,16 +490,6 @@
             this.tabPage_ModbusSlave.TabIndex = 1;
             this.tabPage_ModbusSlave.Text = "Modbus从站";
             this.tabPage_ModbusSlave.UseVisualStyleBackColor = true;
-            // 
-            // btn_topDisplay
-            // 
-            this.btn_topDisplay.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btn_topDisplay.Image = ((System.Drawing.Image)(resources.GetObject("btn_topDisplay.Image")));
-            this.btn_topDisplay.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_topDisplay.Name = "btn_topDisplay";
-            this.btn_topDisplay.Size = new System.Drawing.Size(23, 22);
-            this.btn_topDisplay.Text = "~";
-            this.btn_topDisplay.Click += new System.EventHandler(this.btn_topDisplay_Click);
             // 
             // MainForm
             // 
