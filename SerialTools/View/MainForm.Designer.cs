@@ -61,6 +61,8 @@
             this.pnl_GenericTx = new System.Windows.Forms.Panel();
             this.txtbx_NormalTx = new System.Windows.Forms.TextBox();
             this.pnl_GenericTxCtrl = new System.Windows.Forms.Panel();
+            this.lbl_NormalTxCnt = new System.Windows.Forms.Label();
+            this.lbl_NormalRxCnt = new System.Windows.Forms.Label();
             this.chkbx_NormalHexRxDsplay = new System.Windows.Forms.CheckBox();
             this.lbl_GenericTxPs = new System.Windows.Forms.Label();
             this.txtbx_NormalTxPs = new System.Windows.Forms.TextBox();
@@ -71,8 +73,7 @@
             this.btn_GenericTxSend = new System.Windows.Forms.Button();
             this.tabPage_ModbusMaster = new System.Windows.Forms.TabPage();
             this.tabPage_ModbusSlave = new System.Windows.Forms.TabPage();
-            this.lbl_NormalRxCnt = new System.Windows.Forms.Label();
-            this.lbl_NormalTxCnt = new System.Windows.Forms.Label();
+            this.btn_topDisplay = new System.Windows.Forms.ToolStripButton();
             this.toolStrip_Form.SuspendLayout();
             this.tabctrl_Form.SuspendLayout();
             this.tabPage_Generic.SuspendLayout();
@@ -106,7 +107,8 @@
             this.btn_Clean,
             this.toolStripSeparator8,
             this.btn_OpenFolder,
-            this.toolStripSeparator9});
+            this.toolStripSeparator9,
+            this.btn_topDisplay});
             this.toolStrip_Form.Location = new System.Drawing.Point(0, 0);
             this.toolStrip_Form.Name = "toolStrip_Form";
             this.toolStrip_Form.Size = new System.Drawing.Size(1264, 25);
@@ -186,7 +188,7 @@
             // cmbx_SelectStopBits
             // 
             this.cmbx_SelectStopBits.Name = "cmbx_SelectStopBits";
-            this.cmbx_SelectStopBits.Size = new System.Drawing.Size(100, 25);
+            this.cmbx_SelectStopBits.Size = new System.Drawing.Size(95, 25);
             // 
             // toolStripSeparator5
             // 
@@ -202,7 +204,7 @@
             // cmbx_SelectDatabits
             // 
             this.cmbx_SelectDatabits.Name = "cmbx_SelectDatabits";
-            this.cmbx_SelectDatabits.Size = new System.Drawing.Size(100, 25);
+            this.cmbx_SelectDatabits.Size = new System.Drawing.Size(95, 25);
             // 
             // toolStripSeparator6
             // 
@@ -218,7 +220,7 @@
             // cmbx_SelectParity
             // 
             this.cmbx_SelectParity.Name = "cmbx_SelectParity";
-            this.cmbx_SelectParity.Size = new System.Drawing.Size(100, 25);
+            this.cmbx_SelectParity.Size = new System.Drawing.Size(95, 25);
             // 
             // toolStripSeparator7
             // 
@@ -307,6 +309,7 @@
             this.txtbx_NormalRx.Multiline = true;
             this.txtbx_NormalRx.Name = "txtbx_NormalRx";
             this.txtbx_NormalRx.ReadOnly = true;
+            this.txtbx_NormalRx.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtbx_NormalRx.Size = new System.Drawing.Size(1252, 352);
             this.txtbx_NormalRx.TabIndex = 0;
             // 
@@ -351,6 +354,24 @@
             this.pnl_GenericTxCtrl.Size = new System.Drawing.Size(259, 140);
             this.pnl_GenericTxCtrl.TabIndex = 0;
             // 
+            // lbl_NormalTxCnt
+            // 
+            this.lbl_NormalTxCnt.AutoSize = true;
+            this.lbl_NormalTxCnt.Location = new System.Drawing.Point(136, 121);
+            this.lbl_NormalTxCnt.Name = "lbl_NormalTxCnt";
+            this.lbl_NormalTxCnt.Size = new System.Drawing.Size(65, 12);
+            this.lbl_NormalTxCnt.TabIndex = 9;
+            this.lbl_NormalTxCnt.Text = "发送字节数";
+            // 
+            // lbl_NormalRxCnt
+            // 
+            this.lbl_NormalRxCnt.AutoSize = true;
+            this.lbl_NormalRxCnt.Location = new System.Drawing.Point(4, 121);
+            this.lbl_NormalRxCnt.Name = "lbl_NormalRxCnt";
+            this.lbl_NormalRxCnt.Size = new System.Drawing.Size(65, 12);
+            this.lbl_NormalRxCnt.TabIndex = 9;
+            this.lbl_NormalRxCnt.Text = "接收字节数";
+            // 
             // chkbx_NormalHexRxDsplay
             // 
             this.chkbx_NormalHexRxDsplay.AutoSize = true;
@@ -375,9 +396,9 @@
             // txtbx_NormalTxPs
             // 
             this.txtbx_NormalTxPs.Font = new System.Drawing.Font("JetBrainsMono NFM", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_NormalTxPs.Location = new System.Drawing.Point(131, 94);
+            this.txtbx_NormalTxPs.Location = new System.Drawing.Point(138, 95);
             this.txtbx_NormalTxPs.Name = "txtbx_NormalTxPs";
-            this.txtbx_NormalTxPs.Size = new System.Drawing.Size(88, 23);
+            this.txtbx_NormalTxPs.Size = new System.Drawing.Size(105, 23);
             this.txtbx_NormalTxPs.TabIndex = 5;
             this.txtbx_NormalTxPs.Text = "1000";
             // 
@@ -397,7 +418,7 @@
             // 
             this.chkbx_NormalTime.AutoSize = true;
             this.chkbx_NormalTime.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkbx_NormalTime.Location = new System.Drawing.Point(131, 75);
+            this.chkbx_NormalTime.Location = new System.Drawing.Point(138, 78);
             this.chkbx_NormalTime.Name = "chkbx_NormalTime";
             this.chkbx_NormalTime.Size = new System.Drawing.Size(60, 16);
             this.chkbx_NormalTime.TabIndex = 3;
@@ -409,7 +430,7 @@
             // 
             this.chkbx_NormalHexTxDisplay.AutoSize = true;
             this.chkbx_NormalHexTxDisplay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkbx_NormalHexTxDisplay.Location = new System.Drawing.Point(131, 56);
+            this.chkbx_NormalHexTxDisplay.Location = new System.Drawing.Point(138, 56);
             this.chkbx_NormalHexTxDisplay.Name = "chkbx_NormalHexTxDisplay";
             this.chkbx_NormalHexTxDisplay.Size = new System.Drawing.Size(96, 16);
             this.chkbx_NormalHexTxDisplay.TabIndex = 2;
@@ -460,23 +481,15 @@
             this.tabPage_ModbusSlave.Text = "Modbus从站";
             this.tabPage_ModbusSlave.UseVisualStyleBackColor = true;
             // 
-            // lbl_NormalRxCnt
+            // btn_topDisplay
             // 
-            this.lbl_NormalRxCnt.AutoSize = true;
-            this.lbl_NormalRxCnt.Location = new System.Drawing.Point(4, 121);
-            this.lbl_NormalRxCnt.Name = "lbl_NormalRxCnt";
-            this.lbl_NormalRxCnt.Size = new System.Drawing.Size(65, 12);
-            this.lbl_NormalRxCnt.TabIndex = 9;
-            this.lbl_NormalRxCnt.Text = "接收字节数";
-            // 
-            // lbl_NormalTxCnt
-            // 
-            this.lbl_NormalTxCnt.AutoSize = true;
-            this.lbl_NormalTxCnt.Location = new System.Drawing.Point(129, 121);
-            this.lbl_NormalTxCnt.Name = "lbl_NormalTxCnt";
-            this.lbl_NormalTxCnt.Size = new System.Drawing.Size(65, 12);
-            this.lbl_NormalTxCnt.TabIndex = 9;
-            this.lbl_NormalTxCnt.Text = "发送字节数";
+            this.btn_topDisplay.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btn_topDisplay.Image = ((System.Drawing.Image)(resources.GetObject("btn_topDisplay.Image")));
+            this.btn_topDisplay.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_topDisplay.Name = "btn_topDisplay";
+            this.btn_topDisplay.Size = new System.Drawing.Size(23, 22);
+            this.btn_topDisplay.Text = "~";
+            this.btn_topDisplay.Click += new System.EventHandler(this.btn_topDisplay_Click);
             // 
             // MainForm
             // 
@@ -553,6 +566,7 @@
         private System.Windows.Forms.CheckBox chkbx_NormalHexRxDsplay;
         private System.Windows.Forms.Label lbl_NormalRxCnt;
         private System.Windows.Forms.Label lbl_NormalTxCnt;
+        private System.Windows.Forms.ToolStripButton btn_topDisplay;
     }
 }
 

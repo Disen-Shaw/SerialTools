@@ -358,6 +358,25 @@ namespace SerialTools
             }
         }
 
+        /// <summary>
+        /// 按钮, 控制窗体显示在嘴上层
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_topDisplay_Click(object sender, EventArgs e)
+        {
+            if(this.TopMost)
+            {
+                this.TopMost = false;
+                btn_topDisplay.BackColor = SystemColors.Window;
+            } 
+            else
+            {
+                this.TopMost = true;
+                btn_topDisplay.BackColor = Color.LightSkyBlue;
+            }
+        }
+
         #endregion
 
         #region TabPage_Generic
